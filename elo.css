@@ -1,0 +1,113 @@
+body {
+	background-color:#110008;
+	position: absolute; 
+	left: 10px; 
+	top: 15px;
+}
+
+@media screen and (max-width:1100px) {
+	
+}
+
+
+a {
+	text-decoration:none;
+}
+
+.header {
+	border:1px solid red;
+	height:130px;
+	background-color:#656565;
+	background-color:#650040;
+	position: absolute; 
+	
+}
+
+.welcome {
+	color:#FF7DAF;
+	margin-right:80px;
+	margin-left:90px;
+	float:left;
+	border:1px solid #FF46FD;
+	padding:5px;
+}
+
+.selected {
+		color:#FF7DAF;
+	margin-right:240px;
+	margin-left:400px;
+	font-size:20px;
+	padding:5px;
+}
+
+.join {
+	margin-top:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	border-radius:0px;
+	border-color:#333;
+	background-color:#FFEFFF;
+	font-size:20px;
+	position: absolute; 
+	margin-right:10px;
+	
+}
+
+.footer {
+	background-color:black;
+	height:120px;
+	clear:both;
+	margin-top:170px;
+	color:white;
+}
+
+.span {
+	color:#FF37EE;
+	margin-top:200px;
+	margin-left:370px;
+	margin-right:300px;
+	border:1px solid purple;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:200px;
+	padding-right:200px;
+	box-shadow: 0 0 20px purple;
+	background-color:#FFD4FF;
+	font-size:20px;
+
+}
+
+.corp {
+	margin-left:100px;
+	margin-bottom:50px;
+	padding-bottom:50px;
+	color:red;
+}
+
+.gmailsupp {
+	margin-left:50px;
+}
+
+.strsupp {
+	text-decoration:underline;
+	color:#374EFF;
+}
+
+.contact {
+	margin-left:50px;
+}
+
+.adress {
+	margin-left:0px;
+	float:right;
+}
+
+.span:hover {
+	cursor:pointer;
+}
+
+.main_entrance {
+	margin-bottom:00px;
+}

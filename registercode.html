@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="reg.css" rel="stylesheet" type="text/css">
+			<style>
+
+	</style>
+	</head>
+	
+	<body>
+	<form action="action_page.php">
+  <div class="container">
+    <h1 style="color:#A09BFF; margin-left:500px">Регстрация</h1>
+		<nav>
+  <div class="theme-switch-wrapper">
+       <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+    <b class="clock">Включить ночную тему</b>
+  </div>
+
+</nav>  
+
+
+<script>
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+    <p style="margin-left:350px;">Пожалуйста, заполните эту <u style="color:red;"><b>форму</b></u>, чтобы создать учетную запись.</p>
+    <hr>
+
+    <label for="email"><b><u>Почта</u></b></label>
+    <input type="text" placeholder="Введите почту" name="email" required>
+
+    <label  for="psw"><b><u>Пароль</u></b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <label for="psw-repeat"><b><u>Повторите пароль</u></b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+    <hr>
+
+    <p>
+		<b>Создавая аккаунт, вы соглашаетесь с нашими <u style="color:red;">Условиями и Конфиденциальностью.</u></b></p>
+    <button type="submit" class="registerbtn">Зарегестрироватся</button>
+  </div>
+
+  <div class="container signin">
+    <p>Создать новый аккаунт <a href="#" class="regio">Войти</a>.</p>
+  </div>
+</form>
+	</body>
+</html>
